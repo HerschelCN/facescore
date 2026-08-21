@@ -1,0 +1,16 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch==2.5.1+cpu; python_version < "3.13"
+torchvision==0.20.1+cpu; python_version < "3.13"
+numpy==1.26.4; python_version < "3.13"
+Pillow==10.2.0; python_version < "3.13"
+
+torch==2.13.0+cpu; python_version >= "3.13"
+torchvision==0.28.0+cpu; python_version >= "3.13"
+numpy==2.4.4; python_version >= "3.13"
+Pillow==12.2.0; python_version >= "3.13"
+
+packaging==25.0
+einops==0.6.0
+facenet-pytorch==2.5.3
+openai-clip==1.0.1
