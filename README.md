@@ -114,3 +114,24 @@ FPEM score: 1.6579 / 5.0000
 检查点的 `FPEM_add.` 外层前缀会被明确移除，之后使用 `strict=True` 加载全部 1242 个 state-dict 项；不会忽略缺失键或多余键。
 
 论文：[CVF Open Access](https://openaccess.thecvf.com/content/ICCV2025/html/Li_FPEM_Face_Prior_Enhanced_Facial_Attractiveness_Prediction_for_Live_Videos_ICCV_2025_paper.html)
+
+## 版权、许可与引用
+
+本仓库是为 CPU 单图推理制作的非官方适配，并非 FPEM 作者或其所属机构的官方发行版或背书产品。
+
+- `fpem_official/` 中的实质性代码修改自 [FPEM](https://github.com/Estella-LH/FPEM)；上游版权归原作者所有，按 MIT License 使用，完整文本见 [`fpem_official/LICENSE`](fpem_official/LICENSE)。
+- `fpem_official/VIT.py` 的上游文件明确注明源自 Ross Wightman 的 `pytorch-image-models`（timm）；相关代码按 Apache License 2.0 使用，完整文本见 [`third_party/pytorch-image-models-LICENSE.txt`](third_party/pytorch-image-models-LICENSE.txt)。
+- Swin Transformer、OpenAI CLIP、facenet-pytorch 及其他运行时依赖仍归各自权利人所有；具体归属、许可链接以及本仓库的修改清单见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
+- 模型检查点和训练数据不包含在本仓库中。源码许可证不应被自动理解为对模型权重、数据集、论文内容、名称或商标授予相同权利；再分发或商用前应另行核对上游条款。
+- 除第三方文件自身许可证明确授予的权利外，本仓库目前没有为其余原创包装代码声明统一的开源许可证。
+
+学术或研究使用请引用原论文：
+
+```bibtex
+@inproceedings{li2025fpem,
+  title     = {FPEM: Face Prior Enhanced Facial Attractiveness Prediction for Live Videos with Face Retouching},
+  author    = {Li, Hui and Ren, Xiaoyu and Yu, Hongjiu and Chen, Ying and Li, Kai and Wang, L. and Min, Xiongkuo and Duan, Huiyu and Zhai, Guangtao and Liu, Xu},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year      = {2025}
+}
+```

@@ -1,3 +1,12 @@
+"""Swin-based face architecture used by FPEM.
+
+Derived from FPEM ``nets/SwinFace_arch.py`` at commit
+c2965425247d7bf8b764d27e4483a06fc7a061e5.
+Copyright (c) 2025 Estella-LH. Licensed under the MIT License; see LICENSE.
+This file implements the Swin Transformer architecture and was modified for
+this repository; attribution and change details are in ../THIRD_PARTY_NOTICES.md.
+"""
+
 import contextlib
 import torch
 import torch.nn as nn

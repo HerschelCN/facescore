@@ -1,6 +1,12 @@
-"""
-original code from rwightman:
-https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
+"""Vision Transformer implementation used by FPEM.
+
+Derived from FPEM ``nets/VIT.py`` at commit
+c2965425247d7bf8b764d27e4483a06fc7a061e5 (MIT). That upstream file states
+that its original code came from Ross Wightman's pytorch-image-models/timm
+Vision Transformer implementation (Apache-2.0).
+
+Modified for this repository. The relevant licenses and change notice are in
+../THIRD_PARTY_NOTICES.md and ../third_party/.
 """
 from functools import partial
 from collections import OrderedDict
@@ -475,5 +481,4 @@ def vit_huge_patch14_224_in21k(num_classes: int = 21843, has_logits: bool = True
                               representation_size=1280 if has_logits else None,
                               num_classes=num_classes)
     return model
-
 

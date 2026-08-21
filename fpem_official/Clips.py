@@ -1,3 +1,11 @@
+"""FPEM model definitions adapted for CPU-only inference.
+
+Derived from FPEM ``nets/Clips.py`` at commit
+c2965425247d7bf8b764d27e4483a06fc7a061e5.
+Copyright (c) 2025 Estella-LH. Licensed under the MIT License; see LICENSE.
+Modified for this repository; see ../THIRD_PARTY_NOTICES.md.
+"""
+
 import sys
 import types
 
